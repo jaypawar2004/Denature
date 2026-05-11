@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/service' },
+    { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -47,7 +48,7 @@ const Navbar = () => {
               >
                 {link.name}
                 {/* Active/Hover Line Animation */}
-                <span className={`absolute bottom-0 left-0 h-[2px] bg-[#a7f3d0] transition-all duration-300 
+                <span className={`absolute bottom-0 left-0 h-[2px] bg-[#5ECBE8] transition-all duration-300 
                   ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`}
                 ></span>
               </Link>
@@ -57,7 +58,7 @@ const Navbar = () => {
 
         {/* Book Now Button (Desktop) & Hamburger (Mobile) */}
         <div className="flex items-center gap-4">
-          <button className="hidden sm:block bg-[#ccfbf1] text-[#134e4a] px-6 py-2.5 rounded-full font-semibold hover:bg-[#99f6e4] transition-all active:scale-95 shadow-sm">
+          <button className="hidden sm:block bg-[#5ECBE8] text-[#fff] px-6 py-2.5 rounded-full font-semibold hover:bg-[#95d1ff] transition-all active:scale-95 shadow-sm">
             Book Now
           </button>
 
@@ -90,7 +91,7 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <button className="sm:hidden bg-[#ccfbf1] text-[#134e4a] px-6 py-3 rounded-full font-semibold mt-2">
+          <button className="sm:hidden bg-[#5ECBE8] text-white px-6 py-3 rounded-full font-semibold mt-2">
             Book Now
           </button>
         </div>

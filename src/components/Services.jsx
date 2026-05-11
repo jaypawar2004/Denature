@@ -53,7 +53,7 @@ const Services = () => {
             Whether it's a checkup or a full makeover, we've got you covered
           </p>
         </div>
-        <button className="px-8 py-3.5 border-2 border-gray-200 rounded-full font-semibold text-[#0f172a] hover:bg-[#eefcf9] hover:border-[#a7f3d0] transition-all whitespace-nowrap">
+        <button className="px-8 py-3.5 border-2 border-gray-200 rounded-full font-semibold text-[#0f172a] hover:bg-[#eefcf9] hover:border-[#9ddaea] transition-all whitespace-nowrap">
           Explore All Services
         </button>
       </div>
