@@ -136,7 +136,7 @@ export default function Home() {
                 <option>Morning</option>
                 <option>Afternoon</option>
               </select>
-              <button className="w-full md:w-auto bg-[#5ECBE8] text-[#134e4a] px-8 py-3 rounded-full font-bold mt-4 hover:bg-[#abe8f9] transition-all">
+              <button className="w-full md:w-auto bg-[#5ECBE8] text-white px-8 py-3 rounded-full font-bold mt-4 hover:bg-[#abe8f9] transition-all">
                 Submit
               </button>
             </form>

@@ -63,7 +63,7 @@ const Services = () => {
           <div
             key={index}
             className="relative group h-[300px] p-10 rounded-[45px] transition-all duration-500 overflow-hidden shadow-sm flex flex-col justify-start hover:-translate-y-1 hover:shadow-xl"
-            style={{ background: '#e0f1ed' }}
+            style={{ background: '#5DCBEA' }}
           >
             {/* Background Image - sab cards pe */}
             {service.image && (

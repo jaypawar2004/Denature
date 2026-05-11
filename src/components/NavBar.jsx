@@ -11,7 +11,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/service' },
+    { name: 'Services', href: '/services' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -58,9 +58,9 @@ const Navbar = () => {
 
         {/* Book Now Button (Desktop) & Hamburger (Mobile) */}
         <div className="flex items-center gap-4">
-          <button className="hidden sm:block bg-[#5ECBE8] text-[#fff] px-6 py-2.5 rounded-full font-semibold hover:bg-[#95d1ff] transition-all active:scale-95 shadow-sm">
+          <Link href={'/bookingform'} className="hidden sm:block bg-[#5ECBE8] text-[#fff] px-6 py-2.5 rounded-full font-semibold hover:bg-[#95d1ff] transition-all active:scale-95 shadow-sm">
             Book Now
-          </button>
+          </Link>
 
           {/* Mobile Menu Icon */}
           <button 
@@ -91,9 +91,11 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <button className="sm:hidden bg-[#5ECBE8] text-white px-6 py-3 rounded-full font-semibold mt-2">
+          <Link href={'/bookingform'} 
+           onClick={() => setIsOpen(false)}
+           className="sm:hidden bg-[#5ECBE8] text-white px-6 py-3 rounded-full font-semibold mt-2">
             Book Now
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

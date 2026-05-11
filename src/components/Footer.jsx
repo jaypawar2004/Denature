@@ -128,7 +128,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col gap-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-900">Resources</span>
-                <Link href="/blog" className="text-gray-500 hover:text-teal-600 transition-colors text-sm">Blog</Link>
+                {/* <Link href="/blog" className="text-gray-500 hover:text-teal-600 transition-colors text-sm">Blog</Link> */}
                 <Link href="/contact" className="text-gray-500 hover:text-teal-600 transition-colors text-sm">Contact</Link>
               </div>
             </div>
