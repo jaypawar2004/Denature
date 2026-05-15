@@ -26,7 +26,7 @@ const Navbar = () => {
           <span className="text-xl md:text-2xl font-bold text-[#0f172a] tracking-tight">Tigris Smile</span> */}
           <Link href={'/'} >
           <Image 
-        src="/images/logoFix.png" // Aapke image ka path
+        src="/images/logofix.png" // Aapke image ka path
         alt="Tigris Smile Logo"
         width={0}
         height={0}
