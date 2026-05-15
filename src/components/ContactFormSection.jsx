@@ -4,11 +4,11 @@ import React from 'react';
 const ContactFormSection = () => {
   const schedule = [
     { day: "Monday", time: "09:00 AM – 05:00 PM" },
-    { day: "Tuesday", time: "09:00 AM – 06:00 PM" },
-    { day: "Wednesday", time: "09:00 AM – 06:00 PM" },
-    { day: "Thursday", time: "09:00 AM – 06:00 PM" },
-    { day: "Friday", time: "09:00 AM – 06:00 PM" },
-    { day: "Saturday", time: "09:00 AM – 03:00 PM" },
+    { day: "Tuesday", time: "09:00 AM – 05:00 PM" },
+    { day: "Wednesday", time: "09:00 AM – 05:00 PM" },
+    { day: "Thursday", time: "09:00 AM – 05:00 PM" },
+    { day: "Friday", time: "09:00 AM – 05:00 PM" },
+    { day: "Saturday", time: "Closed" },
     { day: "Sunday", time: "Closed" },
   ];
 

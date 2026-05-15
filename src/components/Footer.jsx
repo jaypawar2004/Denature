@@ -84,16 +84,50 @@ const Footer = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-4">
-            {['FB', 'IG', 'X'].map((social) => (
-              <button 
-                key={social}
-                className="w-10 h-10 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-xs font-bold text-gray-500 hover:bg-teal-600 hover:text-white hover:border-teal-600 transition-all shadow-sm"
-              >
-                {social}
-              </button>
-            ))}
-          </div>
+         <div className="flex gap-4">
+  {[
+    { 
+      name: 'Facebook', 
+      url: 'https://facebook.com/share/1CFfmyu1QF/?mibextid=wwXIfr',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+      )
+    },
+    { 
+      name: 'Instagram', 
+      url: 'https://www.instagram.com/tigrissmile_brisbane?igsh=MWVienFpNjd0czVoZw%3D%3D&utm_source=qr',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      )
+    },
+    { 
+      name: 'TikTok', 
+      url: 'https://tiktok.com/@tigris.smile?_r=1&_t=ZS-94QFDbzQJZl',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+        </svg>
+      )
+    }
+  ].map((social) => (
+    <a 
+      key={social.name}
+      href={social.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-11 h-11 rounded-full bg-white border border-slate-100 flex items-center justify-center text-slate-500 hover:bg-[#5CCBEA] hover:text-white hover:border-[#5CCBEA] transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-1"
+      aria-label={social.name}
+    >
+      {social.icon}
+    </a>
+  ))}
+</div>
         </div>
       </div>
     </footer>

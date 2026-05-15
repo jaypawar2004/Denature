@@ -4,12 +4,12 @@ import Image from 'next/image';
 const ClinicHours = () => {
   // Aap yahan se timings change kar sakte hain
   const hoursData = [
-    { day: "Monday", time: "09:00 AM – 06:00 PM", closed: false },
-    { day: "Tuesday", time: "09:00 AM – 06:00 PM", closed: false },
-    { day: "Wednesday", time: "09:00 AM – 06:00 PM", closed: false },
-    { day: "Thursday", time: "09:00 AM – 06:00 PM", closed: false },
-    { day: "Friday", time: "09:00 AM – 06:00 PM", closed: false },
-    { day: "Saturday", time: "09:00 AM – 03:00 PM", closed: false },
+    { day: "Monday", time: "09:00 AM – 05:00 PM", closed: false },
+    { day: "Tuesday", time: "09:00 AM – 05:00 PM", closed: false },
+    { day: "Wednesday", time: "09:00 AM – 05:00 PM", closed: false },
+    { day: "Thursday", time: "09:00 AM – 05:00 PM", closed: false },
+    { day: "Friday", time: "09:00 AM – 05:00 PM", closed: false },
+    { day: "Saturday", time: "Closed", closed: true },
     { day: "Sunday", time: "Closed", closed: true },
   ];
 

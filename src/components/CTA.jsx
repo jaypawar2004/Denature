@@ -11,9 +11,12 @@ const CTA = () => {
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
           Book your first appointment now and receive a free dental checkup
         </p>
-        <Link href={'/bookingform'} className="bg-white text-[#0f172a] px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all active:scale-95">
-          Book an Appointment
-        </Link>
+        <Link 
+  href={'/bookingform'} 
+  className="bg-white text-[#0f172a] px-6 md:px-10 py-3.5 md:py-4 rounded-full font-bold text-base md:text-lg hover:shadow-xl transition-all active:scale-95 whitespace-nowrap inline-block text-center"
+>
+  Book an Appointment
+</Link>
       </div>
     </section>
   );

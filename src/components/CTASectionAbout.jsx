@@ -16,9 +16,12 @@ const CTASectionAbout = () => {
             Schedule your visit today and take the first step toward a healthier, brighter smile.
           </p>
           <div>
-            <Link href={'/bookingform'} className="bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-900 hover:text-white transition-all shadow-sm">
-              Book Your Appointment
-            </Link>
+           <Link 
+  href={'/bookingform'} 
+  className="bg-white text-[#0f172a] px-6 md:px-10 py-3.5 md:py-4 rounded-full font-bold text-base md:text-lg hover:shadow-xl transition-all active:scale-95 whitespace-nowrap inline-block text-center"
+>
+  Book an Appointment
+</Link>
           </div>
         </div>
 

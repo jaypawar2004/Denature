@@ -1,5 +1,3 @@
-
-
 'use client'; 
 import Image from 'next/image';
 import { 
@@ -102,22 +100,25 @@ const Services = () => {
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover transition-all duration-700 scale-105 opacity-0 group-hover:opacity-100 group-hover:scale-100"
+                  /* MOBILE: opacity-100 (Direct Dikhega), LAPTOP: md:opacity-0 (Hover pe Dikhega) */
+                  className="object-cover transition-all duration-700 scale-100 md:scale-105 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:scale-100"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                {/* Gradient Overlay: Mobile pe hamesha dikhega text readability ke liye, Laptop pe hover pe */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-0 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
               </>
             )}
 
             {/* Lucide Icon Container */}
-            <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-sm mb-8 relative z-10 transition-all duration-300 bg-white text-[#5CCBEA] group-hover:bg-white/20 group-hover:text-white group-hover:backdrop-blur-md">
+            <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-sm mb-8 relative z-10 transition-all duration-300 bg-white text-[#5CCBEA] md:group-hover:bg-white/20 md:group-hover:text-white md:group-hover:backdrop-blur-md">
               {service.icon}
             </div>
 
             {/* Text Content */}
-            <div className="relative z-10 mt-auto transition-colors duration-300 text-[#0f172a] group-hover:text-white">
+            {/* MOBILE: Text hamesha white rahega image ke upar, LAPTOP: Default dark, hover pe white */}
+            <div className="relative z-10 mt-auto transition-colors duration-300 text-white md:text-[#0f172a] md:group-hover:text-white">
               <h3 className="text-2xl font-bold mb-3 tracking-tight">{service.title}</h3>
-              <p className="text-gray-600 group-hover:text-gray-200 text-lg leading-snug transition-colors duration-300">
+              <p className="text-gray-200 md:text-gray-600 md:group-hover:text-gray-200 text-lg leading-snug transition-colors duration-300">
                 {service.description}
               </p>
             </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const FounderSection = () => {
@@ -41,11 +42,16 @@ const FounderSection = () => {
         <div className="order-1 lg:order-2 relative">
           <div className="aspect-[4/5] bg-slate-200 rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10">
             {/* Replace with your actual image path */}
-            <img 
-              src="/images/Owner-img.jpeg" 
-              alt="Founder of Tigris Smile" 
-              className="w-full h-full object-cover"
-            />
+           <div className="relative w-full h-full overflow-hidden rounded-[3rem]">
+  <Image 
+    src="/images/owner2.jpeg" 
+    alt="Founder of Tigris Smile" 
+    fill
+    className="object-cover"
+    sizes="(max-width: 768px) 100vw, 50vw"
+    priority
+  />
+</div>
           </div>
           {/* Decorative background element */}
           <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
