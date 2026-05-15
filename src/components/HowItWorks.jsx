@@ -89,7 +89,7 @@ const HowItWorks = () => {
         {/* Right: Feature Image */}
         <div className="relative">
           {/* Decorative Pink Ring */}
-          <div className="absolute top-12 left-12 w-8 h-8 border-[6px] border-pink-400 rounded-full z-10 animate-bounce"></div>
+          {/* <div className="absolute top-12 left-12 w-8 h-8 border-[6px] border-pink-400 rounded-full z-10 animate-bounce"></div> */}
           
           <div className="relative h-[600px] w-full rounded-[60px] overflow-hidden shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
             {/* Next.js Image Component */}

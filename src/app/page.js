@@ -24,7 +24,7 @@ const page = () => {
       <HowItWorks />
       <Experience />
       <TeamCarousel />
-      <LogoSlider />
+      {/* <LogoSlider /> */}
       <Testimonials />
       {/* <Blog /> */}
       <CTA />

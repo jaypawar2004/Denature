@@ -64,7 +64,7 @@ const ContactHero = () => {
               </div>
               <div>
                 <p className="font-bold text-slate-900">Phone Number</p>
-                <p className="text-slate-500 text-sm">(+61) 072 111 9970</p>
+                <p className="text-slate-500 text-sm">(07) 2111 9970</p>
               </div>
             </div>
           </div>
@@ -73,29 +73,49 @@ const ContactHero = () => {
           <div className="pt-6 border-t border-slate-50">
             <p className="font-bold text-slate-900 mb-4">Follow Our Journey</p>
             <div className="flex gap-4">
-              {/* Manual Instagram */}
-              <button className="p-3 rounded-full border border-slate-100 text-slate-400 hover:bg-[#5CCBEA] hover:text-white transition-all duration-300">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </button>
-              
-              {/* Manual Facebook */}
-              <button className="p-3 rounded-full border border-slate-100 text-slate-400 hover:bg-[#5CCBEA] hover:text-white transition-all duration-300">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                </svg>
-              </button>
-
-              {/* Manual Twitter */}
-              <button className="p-3 rounded-full border border-slate-100 text-slate-400 hover:bg-[#5CCBEA] hover:text-white transition-all duration-300">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                </svg>
-              </button>
-            </div>
+  {[
+    { 
+      name: 'Facebook', 
+      url: 'https://facebook.com/share/1CFfmyu1QF/?mibextid=wwXIfr',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        </svg>
+      )
+    },
+    { 
+      name: 'Instagram', 
+      url: 'https://www.instagram.com/tigrissmile_brisbane?igsh=MWVienFpNjd0czVoZw%3D%3D&utm_source=qr',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      )
+    },
+    { 
+      name: 'TikTok', 
+      url: 'https://tiktok.com/@tigris.smile?_r=1&_t=ZS-94QFDbzQJZl',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+        </svg>
+      )
+    }
+  ].map((social) => (
+    <a 
+      key={social.name}
+      href={social.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-11 h-11 rounded-full bg-white border border-slate-100 flex items-center justify-center text-slate-500 hover:bg-[#5CCBEA] hover:text-white hover:border-[#5CCBEA] transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-1"
+      aria-label={social.name}
+    >
+      {social.icon}
+    </a>
+  ))}
+</div>
           </div>
         </div>
       </div>
