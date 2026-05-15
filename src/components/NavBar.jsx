@@ -26,12 +26,12 @@ const Navbar = () => {
           <span className="text-xl md:text-2xl font-bold text-[#0f172a] tracking-tight">Tigris Smile</span> */}
           <Link href={'/'} >
          <Image 
-  src="/images/logofix.png" 
+  src="/images/main-logo.png" 
   alt="Tigris Smile Logo"
-  width={500} // Yahan koi badi value de do (pixels mein)
-  height={100} // Yahan bhi
-  priority // Logo ke liye priority dena zaroori hai
-  className="w-auto h-10 md:h-12 object-contain" // Maine extra ']' bracket hata diya hai
+  width={500} 
+  height={100}
+  priority 
+  className="w-auto h-10 md:h-12 object-contain" 
 />
         </Link>
         </div>
