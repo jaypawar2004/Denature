@@ -35,7 +35,7 @@ const TeamCarousel = () => {
   };
 
   return (
-   <section className="max-w-7xl mx-auto px-6 md:px-8 py-24 font-sans overflow-hidden">
+   <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 font-sans overflow-hidden">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
         <div className="max-w-md">
           <div className="inline-block px-4 py-1 rounded-full bg-[#E6F7FB] text-[#5CCBEA] text-sm font-bold mb-4">

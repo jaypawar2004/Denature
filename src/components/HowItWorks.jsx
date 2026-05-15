@@ -40,7 +40,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="bg-white py-24 font-sans">
+    <section className="bg-white py-12 font-sans">
       <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         
         {/* Left: Steps Timeline */}

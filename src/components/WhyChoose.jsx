@@ -17,7 +17,7 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center font-sans">
+    <section className="max-w-7xl mx-auto px-8 py-12 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center font-sans">
       {/* Left: Features */}
       <div className="space-y-8">
         <div>

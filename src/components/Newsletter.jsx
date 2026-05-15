@@ -2,7 +2,7 @@ import React from 'react';
 
 const Newsletter = () => {
   return (
-    <section className="bg-[#f8fafc] py-20 border-b border-gray-100">
+    <section className="bg-[#f8fafc] py-10 border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row justify-between items-center gap-12">
         {/* Left Side: Heading */}
         <div className="max-w-2xl text-center lg:text-left">

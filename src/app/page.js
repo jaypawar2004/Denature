@@ -16,7 +16,7 @@ import FAQSection from '@/components/FAQSectionServices'
 
 const page = () => {
   return (
-    <div>
+    <div className=''>
       {/* <Navbar /> */}
       <Home />
       <Services />

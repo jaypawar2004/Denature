@@ -71,7 +71,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="max-w-7xl mx-auto px-8 py-20 bg-[#f8fafc]">
+    <section className="max-w-7xl mx-auto px-8 py-12 bg-[#f8fafc]">
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0f172a] mb-4">

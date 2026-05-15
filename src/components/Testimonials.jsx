@@ -17,7 +17,7 @@ const reviews = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-[#f8fafc] py-24 px-8">
+    <section className="bg-[#f8fafc] py-12 px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
         
         {/* Left Side: Text & Google Badge */}

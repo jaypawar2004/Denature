@@ -44,7 +44,7 @@ const FAQSection = () => {
   const [openId, setOpenId] = useState("01");
 
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto">
+    <section className="py-12 px-6 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
         
         {/* Left Side: Updated Title */}
