@@ -44,7 +44,7 @@ const ContactHero = () => {
               </div>
               <div>
                 <p className="font-bold text-slate-900">Our Clinic</p>
-                <p className="text-slate-500 text-sm">Brisbane, Queensland, Australia</p>
+                <p className="text-slate-500 text-sm">Brisbane Australia</p>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ const ContactHero = () => {
               </div>
               <div>
                 <p className="font-bold text-slate-900">Email Address</p>
-                <p className="text-slate-500 text-sm">info@tigrissmile.com.au</p>
+                <p className="text-slate-500 text-sm">enquire@tigrissmile.com.au</p>
               </div>
             </div>
 
@@ -64,7 +64,7 @@ const ContactHero = () => {
               </div>
               <div>
                 <p className="font-bold text-slate-900">Phone Number</p>
-                <p className="text-slate-500 text-sm">(07) 1234 5678</p>
+                <p className="text-slate-500 text-sm">(+61) 072 111 9970</p>
               </div>
             </div>
           </div>

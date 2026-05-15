@@ -5,45 +5,55 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const faqData = [
   {
     id: "01",
-    question: "Do you accept insurance?",
-    answer: "Yes, we accept most major insurance providers and are happy to assist with claims. If you're unsure about your coverage, our front desk staff can help you check eligibility and guide you through the reimbursement process."
+    question: "Why Do People Need Dentures?",
+    answer: "People need dentures to replace missing teeth, improve eating and speaking, support facial appearance, and restore confidence in their smile."
   },
   {
     id: "02",
-    question: "Is teeth whitening safe?",
-    answer: "Professional teeth whitening is perfectly safe when performed by qualified clinicians. We use high-quality materials that protect your enamel while achieving a brighter smile."
+    question: "Do dentures need maintenance?",
+    answer: "Yes. Dentures require regular cleaning, care, and occasional adjustments to maintain comfort, fit, and function. Over time, changes in the gums and jaw can affect how dentures fit."
   },
   {
     id: "03",
-    question: "How often should I visit the dentist?",
-    answer: "We generally recommend a check-up every 6 months to maintain optimal oral health and catch any potential issues early."
+    question: "What should I do if my denture breaks or feels loose?",
+    answer: "Do not try to fix it yourself. Contact us as soon as possible so we can assess the issue and recommend the best repair or adjustment option to restore comfort and function."
   },
   {
     id: "04",
-    question: "Do you treat children?",
-    answer: "Yes, we provide gentle dental care for patients of all ages, including specialized pediatric services for children."
+    question: "How long does it take to make dentures?",
+    answer: "Treatment time depends on the type of denture and your individual case. Some repairs and adjustments can be completed quickly, while full dentures usually require multiple appointments to ensure the best fit and appearance."
   },
   {
     id: "05",
-    question: "What if I have dental anxiety?",
-    answer: "We prioritize patient comfort and offer calming spaces and gentle techniques to ensure an anxiety-free visit for everyone."
+    question: "Can I sleep with my dentures in?",
+    answer: "It is generally recommended to remove dentures at night to allow your gums to rest and to keep the dentures clean."
+  },
+  {
+    id: "06",
+    question: "Will dentures feel uncomfortable?",
+    answer: "It is normal to need a short adjustment period. Most patients become more comfortable as they adapt to wearing their dentures."
+  },
+  {
+    id: "07",
+    question: "How often should dentures be checked?",
+    answer: "Regular check-ups are important to ensure your dentures continue fitting comfortably and functioning properly."
   }
 ];
 
 const FAQSection = () => {
-  const [openId, setOpenId] = useState("01"); // Pehla wala by default khula rahega
+  const [openId, setOpenId] = useState("01");
 
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
         
-        {/* Left Side: Header */}
+        {/* Left Side: Updated Title */}
         <div className="max-w-sm">
-          <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
-            Answers to Your <br /> Dental Care Questions
+          <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight uppercase tracking-tight">
+            Frequently Asked <br /> Questions
           </h2>
           <p className="text-slate-500">
-            Get the clarity you need to feel confident about your oral health decisions.
+            Get the clarity you need to feel confident about your oral health decisions and denture care.
           </p>
         </div>
 
@@ -61,11 +71,11 @@ const FAQSection = () => {
                 }`}
               >
                 <div className="flex items-center gap-6">
-                  <span className="text-slate-300 font-medium">{item.id}</span>
+                  <span className="text-[#5CCBEA] font-bold">{item.id}</span>
                   <span className="text-slate-900 font-bold">{item.question}</span>
                 </div>
                 {openId === item.id ? (
-                  <ChevronUp className="text-slate-400 w-5 h-5" />
+                  <ChevronUp className="text-[#5CCBEA] w-5 h-5" />
                 ) : (
                   <ChevronDown className="text-slate-400 w-5 h-5" />
                 )}

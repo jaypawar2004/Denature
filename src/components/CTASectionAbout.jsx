@@ -9,7 +9,7 @@ const CTASectionAbout = () => {
         {/* Left Content */}
         <div className="p-10 md:p-16 flex-1 flex flex-col justify-center space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight font-sans">
-            Ready to Experience <br /> Better Dental Care?
+            Ready to Experience <br /> Better Denture Care?
           </h2>
           <p className="text-slate-700 text-lg max-w-md">
             Schedule your visit today and take the first step toward a healthier, brighter smile.

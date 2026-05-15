@@ -11,7 +11,7 @@ const WhyChoose = () => {
 
   const stats = [
     { value: "4.9/5", label: "Average Rating" },
-    { value: "6", label: "In-House Specialists" },
+    { value: "6+ years", label: "In-House Specialists" },
     { value: "10K+", label: "Happy Patients" },
     { value: "20+", label: "Years of Experience" }
   ];

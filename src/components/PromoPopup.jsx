@@ -52,10 +52,10 @@ const PromoPopup = () => {
 
         <div className="p-10 text-center">
           <h2 className="text-3xl font-extrabold text-slate-900 mb-2 font-sans tracking-tight">
-            Exclusive <span className="text-[#5CCBEA]">Smile</span> Offer
+            Exclusive <span className="text-[#5CCBEA]">Smile</span> 
           </h2>
           <p className="text-slate-500 mb-8 text-base leading-relaxed">
-            Join 500+ happy patients in Brisbane. Get a <span className="font-bold text-slate-800">FREE consultation</span> and a customized denture plan today!
+            Join 500+ happy patients in Brisbane. Get a <span className="font-bold text-slate-800">Consultation</span> and a customized denture plan today!
           </p>
 
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
@@ -76,12 +76,12 @@ const PromoPopup = () => {
             </div>
 
             <button className="w-full bg-[#5CCBEA] text-white py-5 rounded-2xl font-black text-lg shadow-xl shadow-[#5CCBEA]/30 hover:bg-[#4bb8d8] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3 mt-6">
-              Claim My Free Gift Now
+              Submit Now 
             </button>
           </form>
 
           <p className="mt-6 text-[10px] text-slate-400 uppercase tracking-[0.2em] font-bold">
-            ⚡ Valid for new patients in Brisbane only
+            secure & Safe 
           </p>
         </div>
       </div>

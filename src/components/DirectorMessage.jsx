@@ -28,8 +28,8 @@ const DirectorMessage = () => {
             </div>
             
             <div className="mt-10">
-              <h4 className="text-xl font-bold text-[#0f172a]">Dr. Ethan Marquez, DDS</h4>
-              <p className="text-[#134e4a]/70 font-medium">Clinical Director & Restorative Dentistry Expert</p>
+              <h4 className="text-xl font-bold text-[#0f172a]">D.P Shahad Hussein</h4>
+              <p className="text-[#134e4a]/70 font-medium">Dental Practitioner & CEO</p>
             </div>
           </motion.div>
         </div>
@@ -37,7 +37,7 @@ const DirectorMessage = () => {
         {/* Right Side: Image with Gradient */}
         <div className="lg:w-[45%] relative min-h-[400px]">
           <Image 
-            src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            src="/images/denatureSecondImg.jpeg" 
             alt="Director"
             fill
             className="object-cover object-center"

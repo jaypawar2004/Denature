@@ -42,7 +42,7 @@ const FounderSection = () => {
           <div className="aspect-[4/5] bg-slate-200 rounded-[2.5rem] overflow-hidden shadow-2xl relative z-10">
             {/* Replace with your actual image path */}
             <img 
-              src="https://plus.unsplash.com/premium_photo-1661580574627-9211124e5c3f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              src="/images/Owner-img.jpeg" 
               alt="Founder of Tigris Smile" 
               className="w-full h-full object-cover"
             />

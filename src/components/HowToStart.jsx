@@ -8,8 +8,8 @@ const steps = [
   },
   {
     id: "02",
-    title: "Come Visit Our Clinic",
-    desc: "Arrive at your scheduled time and check in at the front desk. We'll handle the rest."
+    title: "We come to you",
+    desc: "Enjoy the convenience of professional care at your doorstep. We bring our expertise and equipment directly to your preferred location."
   },
   {
     id: "03",

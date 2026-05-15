@@ -5,7 +5,7 @@ const Experience = () => {
     <section className="max-w-7xl mx-auto px-8 py-20 text-center font-sans">
       <div className="mb-12">
         <h2 className="text-4xl font-bold text-[#0f172a] mb-4">
-          Discover the Dentrist Experience
+          Discover the Clinician Experience
         </h2>
         <p className="text-gray-500 text-lg">
           See how we make every visit comfortable and effective

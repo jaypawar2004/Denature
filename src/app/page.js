@@ -12,6 +12,7 @@ import Blog from '@/components/Blog'
 import CTA from '@/components/CTA'
 import FAQ from '@/components/FAQ'
 import Newsletter from '@/components/Newsletter'
+import FAQSection from '@/components/FAQSectionServices'
 
 const page = () => {
   return (
@@ -25,9 +26,10 @@ const page = () => {
       <TeamCarousel />
       <LogoSlider />
       <Testimonials />
-      <Blog />
+      {/* <Blog /> */}
       <CTA />
-      <FAQ />
+      <FAQSection />
+      {/* <FAQ /> */}
       <Newsletter />
     </div>
   )

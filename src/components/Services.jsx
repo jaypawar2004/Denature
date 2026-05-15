@@ -1,43 +1,73 @@
-'use client'; // dynamic styling ke liye use client zaroori hai
+
+
+'use client'; 
 import Image from 'next/image';
-import { useState } from 'react';
+import { 
+  PlusCircle, 
+  ShieldCheck, 
+  RefreshCcw, 
+  Smile, 
+  Wrench, 
+  Layers, 
+  Stethoscope, 
+  Users, 
+  ClipboardCheck 
+} from 'lucide-react';
 
 const services = [
   {
-    title: "General Dentistry",
-    description: "Preventive care and routine checkups",
-     image: "https://plus.unsplash.com/premium_photo-1681967039743-37dc3a27f4ce?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    icon: "🦷", // Emojis temporary hain, icons replace kiye ja sakte hain
+    title: "Denture Tooth Addition",
+    description: "Same-day service to restore broken or missing teeth quickly without a full new denture.",
+    image: "/images/Denture Tooth addition.jpeg",
+    icon: <PlusCircle size={28} />,
   },
   {
-    title: "Cosmetic Dentistry",
-    description: "Smile makeovers with whitening, veneers & more",
-     image: "https://plus.unsplash.com/premium_photo-1691367782355-549e5ae4d484?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    icon: "✨",
+    title: "Custom Sports Mouth Guard",
+    description: "Precision-fit protection for contact sports, crafted with high-quality materials.",
+    image: "/images/Custom Sports Mouth Guard.jpeg",
+    icon: <ShieldCheck size={28} />,
   },
   {
-    title: "Orthodontics",
-    description: "Braces and Invisalign for a perfect alignment",
-     image: "https://plus.unsplash.com/premium_photo-1681967039743-37dc3a27f4ce?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    icon: "😬",
+    title: "Hard Denture Reline",
+    description: "Restore fit and function professionally in our lab for loose or aged dentures.",
+    image: "/images/Denture Hard reline.jpeg",
+    icon: <RefreshCcw size={28} />,
   },
   {
-    title: "Pediatric Dentistry",
-    description: "Gentle, friendly care for children of all ages",
-    image: "https://plus.unsplash.com/premium_photo-1681967039743-37dc3a27f4ce?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Is image file ko public folder me ensure karein
-    icon: "👶",
+    title: "Soft Denture Reline",
+    description: "Ideal for sensitive gums, providing a cushioning layer for maximum comfort.",
+    image: "/images/Soft denture reline.jpeg",
+    icon: <Smile size={28} />,
   },
   {
-    title: "Dental Implants",
-    description: "Permanent tooth replacement solutions",
-     image: "https://plus.unsplash.com/premium_photo-1681967039743-37dc3a27f4ce?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    icon: "🔩",
+    title: "Denture Repair",
+    description: "Fast repair solutions using quality materials to restore comfort and appearance.",
+    image: "/images/Denture repair.jpeg",
+    icon: <Wrench size={28} />,
   },
   {
-    title: "Emergency Dental Care",
-    description: "Fast, dependable relief when you need it most",
-     image: "https://plus.unsplash.com/premium_photo-1681967039743-37dc3a27f4ce?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    icon: "🆘",
+    title: "Flexible Partial Denture",
+    description: "Lightweight, flexible solution to replace teeth and blend naturally with your smile.",
+    image: "/images/Flexible dentures.jpeg",
+    icon: <Layers size={28} />,
+  },
+  {
+    title: "Acrylic Partial Denture",
+    description: "Custom upper or lower partial dentures designed for comfort and natural look.",
+    image: "/images/Acrylic Partial dentures.jpeg",
+    icon: <Stethoscope size={28} />,
+  },
+  {
+    title: "Full Upper/Lower Denture",
+    description: "Complete denture treatments over 4-6 visits for optimal fit and aesthetics.",
+    image: "/images/Full-upper-and-lower-dentures.jpeg",
+    icon: <Users size={28} />,
+  },
+  {
+    title: "Consultation & Check",
+    description: "Professional 30-minute face-to-face assessment and personalized treatment plan.",
+    image: "/images/consultant .jpeg",
+    icon: <ClipboardCheck size={28} />,
   }
 ];
 
@@ -47,13 +77,13 @@ const Services = () => {
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0f172a] mb-4">
-            Smile Solutions for Every Need
+            Smile Solutions in Brisbane
           </h2>
           <p className="text-gray-500 text-xl max-w-2xl">
-            Whether it's a checkup or a full makeover, we've got you covered
+            From same-day repairs to custom-fit dentures, we restore your confidence.
           </p>
         </div>
-        <button className="px-8 py-3.5 border-2 border-gray-200 rounded-full font-semibold text-[#0f172a] hover:bg-[#eefcf9] hover:border-[#9ddaea] transition-all whitespace-nowrap">
+        <button className="px-8 py-3.5 border-2 border-gray-200 rounded-full font-semibold text-[#0f172a] hover:bg-[#eefcf9] hover:border-[#5CCBEA] transition-all whitespace-nowrap">
           Explore All Services
         </button>
       </div>
@@ -62,10 +92,10 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative group h-[300px] p-10 rounded-[45px] transition-all duration-500 overflow-hidden shadow-sm flex flex-col justify-start hover:-translate-y-1 hover:shadow-xl"
+            className="relative group h-[320px] p-10 rounded-[45px] transition-all duration-500 overflow-hidden shadow-sm flex flex-col justify-start hover:-translate-y-1 hover:shadow-xl"
             style={{ background: '#5DCBEA' }}
           >
-            {/* Background Image - sab cards pe */}
+            {/* Background Image Overlay */}
             {service.image && (
               <>
                 <Image
@@ -79,28 +109,12 @@ const Services = () => {
               </>
             )}
 
-            {/* Fallback color overlay (agar image nahi hai) */}
-            {!service.image && (
-              <div
-                className="absolute inset-0 rounded-[45px] opacity-0 group-hover:opacity-100 transition-opacity duration-400 z-0"
-                style={{ background: service.hoverColor }}
-              />
-            )}
-
-            {/* Watermark */}
-            <div className="absolute top-0 right-0 opacity-[0.05] group-hover:opacity-0 pointer-events-none p-4 -rotate-12 transform scale-150 z-0 text-[#065f46] transition-opacity duration-300">
-              <svg width="200" height="200" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1">
-                <circle cx="50" cy="50" r="45" />
-                <circle cx="50" cy="50" r="35" />
-              </svg>
-            </div>
-
-            {/* Icon */}
-            <div className="w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-sm mb-8 relative z-10 transition-all duration-300 bg-white group-hover:bg-white/20 group-hover:backdrop-blur-md">
+            {/* Lucide Icon Container */}
+            <div className="w-14 h-14 rounded-full flex items-center justify-center shadow-sm mb-8 relative z-10 transition-all duration-300 bg-white text-[#5CCBEA] group-hover:bg-white/20 group-hover:text-white group-hover:backdrop-blur-md">
               {service.icon}
             </div>
 
-            {/* Content - hover pe neeche shift hota hai */}
+            {/* Text Content */}
             <div className="relative z-10 mt-auto transition-colors duration-300 text-[#0f172a] group-hover:text-white">
               <h3 className="text-2xl font-bold mb-3 tracking-tight">{service.title}</h3>
               <p className="text-gray-600 group-hover:text-gray-200 text-lg leading-snug transition-colors duration-300">

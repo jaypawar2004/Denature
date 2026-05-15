@@ -15,9 +15,9 @@ const HowItWorks = () => {
     },
     { 
       id: '02', 
-      title: 'Meet Your Dentist', 
+      title: 'Meet Your Clinician', 
       description: 'Consult with our expert team for a personalized plan.',
-      image: 'https://images.unsplash.com/photo-1728342057908-7f6c4a3262f8?q=80&w=1170&auto=format&fit=crop' 
+      image: '/images/owner2.jpeg' 
     },
     { 
       id: '03', 
@@ -35,7 +35,7 @@ const HowItWorks = () => {
       id: '05', 
       title: 'Follow-Up & Smile', 
       description: 'Ensuring your results last and you stay happy.',
-      image: 'https://images.unsplash.com/photo-1686740512939-1eca8395e484?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' 
+      image: 'https://images.unsplash.com/photo-1663182234283-28941e7612da?q=80&w=1993&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' 
     },
   ];
 

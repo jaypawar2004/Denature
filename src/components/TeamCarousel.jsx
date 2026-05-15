@@ -2,21 +2,21 @@
 import React, { useRef } from 'react';
 
 const teamMembers = [
-  { name: "Dr. Emily Hart",
-     role: "Cosmetic Dentistry", 
-     img: "https://images.unsplash.com/photo-1588776813677-77aaf5595b83?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { name: "Dr. Sara Nguyen", 
-    role: "Pediatric Dentistry", 
-    img: "https://images.unsplash.com/photo-1663151064065-cb334788f77d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { name: "Dr. Leo Ramirez", 
-    role: "Oral Surgery", 
-    img: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { name: "Dr. James Wilson",
-     role: "Orthodontics", 
-    img: "https://images.unsplash.com/photo-1638202993928-7267aad84c31?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-  { name: "Dr. Anya Taylor", 
-    role: "Periodontics", 
-    img: "https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { name: "D.P Shahad Hussein",
+     role: "Dental Practitioner & CEO", 
+     img: "/images/Owner-img.jpeg" },
+  // { name: "Dr. Sara Nguyen", 
+  //   role: "Pediatric Dentistry", 
+  //   img: "https://images.unsplash.com/photo-1663151064065-cb334788f77d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  // { name: "Dr. Leo Ramirez", 
+  //   role: "Oral Surgery", 
+  //   img: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  // { name: "Dr. James Wilson",
+  //    role: "Orthodontics", 
+  //   img: "https://images.unsplash.com/photo-1638202993928-7267aad84c31?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  // { name: "Dr. Anya Taylor", 
+  //   role: "Periodontics", 
+  //   img: "https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
 ];
 
 const TeamCarousel = () => {
@@ -38,7 +38,7 @@ const TeamCarousel = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
         <div className="max-w-xs">
           <h2 className="text-4xl font-bold text-[#0f172a] mb-6 leading-tight">
-            Meet Our Dental Experts
+            Meet Our Denture Experts
           </h2>
           <p className="text-gray-500 leading-relaxed">
             Compassionate care from experienced professionals
