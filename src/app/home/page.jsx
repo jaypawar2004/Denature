@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -70,9 +71,9 @@ export default function Home() {
               tailored to meet the needs of our clients. With a focus on excellence, 
               we deliver services that are efficient and results-driven.
             </p>
-            <button className="border-2 border-[#5ECBE8] text-[#1C5954] px-6 py-2 rounded-full font-semibold hover:bg-[#5ECBE8] transition-all">
+            <Link href={'/bookingform'} className="border-2 border-[#5ECBE8] text-[#1C5954] px-6 py-2 rounded-full font-semibold hover:bg-[#5ECBE8] transition-all">
               Book Your Appointment Today
-            </button>
+            </Link>
           </div>
 
           <div className="relative h-[400px] w-full rounded-3xl overflow-hidden shadow-2xl">

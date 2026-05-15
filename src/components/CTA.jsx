@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const CTA = () => {
@@ -10,9 +11,9 @@ const CTA = () => {
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
           Book your first appointment now and receive a free dental checkup
         </p>
-        <button className="bg-white text-[#0f172a] px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all active:scale-95">
+        <Link href={'/bookingform'} className="bg-white text-[#0f172a] px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all active:scale-95">
           Book an Appointment
-        </button>
+        </Link>
       </div>
     </section>
   );

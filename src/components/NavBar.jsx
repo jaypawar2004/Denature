@@ -26,12 +26,12 @@ const Navbar = () => {
           <span className="text-xl md:text-2xl font-bold text-[#0f172a] tracking-tight">Tigris Smile</span> */}
           <Link href={'/'} >
           <Image 
-        src="/images/logo-denature.jpeg" // Aapke image ka path
+        src="/images/logoFix.png" // Aapke image ka path
         alt="Tigris Smile Logo"
         width={0}
         height={0}
         sizes="100vw"
-        className="w-auto h-10 md:h-12 object-contain" // Tailwind se height set karein, width auto rahegi
+        className="w-auto h-10 md:h-12 object-contain ]" // Tailwind se height set karein, width auto rahegi
         />
         </Link>
         </div>

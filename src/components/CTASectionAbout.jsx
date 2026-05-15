@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const CTASectionAbout = () => {
   return (
@@ -15,9 +16,9 @@ const CTASectionAbout = () => {
             Schedule your visit today and take the first step toward a healthier, brighter smile.
           </p>
           <div>
-            <button className="bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-900 hover:text-white transition-all shadow-sm">
+            <Link href={'/bookingform'} className="bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-slate-900 hover:text-white transition-all shadow-sm">
               Book Your Appointment
-            </button>
+            </Link>
           </div>
         </div>
 
