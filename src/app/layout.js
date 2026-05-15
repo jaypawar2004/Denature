@@ -24,7 +24,7 @@ export const metadata = {
   keywords: ["Denture Brisbane", "Denture Repair", "Mouth Guards Brisbane", "Denture Reline", "Tigris Smile"],
   authors: [{ name: "Tigris Smile" }],
   icons: {
-    icon: "/favicon.ico", // public folder mein favicon hona chahiye
+    icon: "/images/logo-denature.jpeg", // public folder mein favicon hona chahiye
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
@@ -34,7 +34,7 @@ export const metadata = {
     siteName: "Tigris Smile",
     images: [
       {
-        url: "/logo-denature.jpeg", // Social media par share karne par jo image dikhegi
+        url: "/images/consultant .jpeg", // Social media par share karne par jo image dikhegi
         width: 1200,
         height: 630,
       },
