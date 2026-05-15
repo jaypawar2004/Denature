@@ -25,14 +25,14 @@ const Navbar = () => {
           {/* <div className="w-8 h-8 bg-[#0f172a] rounded-tr-lg rounded-bl-lg"></div>
           <span className="text-xl md:text-2xl font-bold text-[#0f172a] tracking-tight">Tigris Smile</span> */}
           <Link href={'/'} >
-          <Image 
-        src="/images/logofix.png" // Aapke image ka path
-        alt="Tigris Smile Logo"
-        width={0}
-        height={0}
-        sizes="100vw"
-        className="w-auto h-10 md:h-12 object-contain ]" // Tailwind se height set karein, width auto rahegi
-        />
+         <Image 
+  src="/images/logofix.png" 
+  alt="Tigris Smile Logo"
+  width={500} // Yahan koi badi value de do (pixels mein)
+  height={100} // Yahan bhi
+  priority // Logo ke liye priority dena zaroori hai
+  className="w-auto h-10 md:h-12 object-contain" // Maine extra ']' bracket hata diya hai
+/>
         </Link>
         </div>
 
