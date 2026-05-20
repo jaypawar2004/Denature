@@ -114,7 +114,7 @@ const BookingForm = () => {
                 >
                   <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
                   <option value="Afternoon (12 PM - 4 PM)">Afternoon (12 PM - 4 PM)</option>
-                  <option value="Evening (4 PM - 6 PM)">Evening (4 PM - 6 PM)</option>
+                  <option value="Evening (4 PM - 6 PM)">Evening (4 PM - 5 PM)</option>
                 </select>
               </div>
             </div>
