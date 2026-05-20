@@ -12,7 +12,7 @@ const VisionMission = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20 bg-white">
+    <section className="max-w-7xl mx-auto px-8 py-12 grid grid-cols-1 lg:grid-cols-2 gap-20 bg-white">
       
       {/* Left: Headline */}
       <div className="space-y-6">

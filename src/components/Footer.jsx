@@ -36,8 +36,8 @@ const Footer = () => {
                 <Link href="/payment-plan" className="text-gray-500 hover:text-teal-600 transition-colors text-sm font-semibold">
   Payment Plan Policy
 </Link>
-                <Link href="/terms" className="text-gray-500 hover:text-teal-600 transition-colors text-sm">Terms of Service</Link>
-                <Link href="/privacy" className="text-gray-500 hover:text-teal-600 transition-colors text-sm">Privacy Policy</Link>
+                {/* <Link href="/terms" className="text-gray-500 hover:text-teal-600 transition-colors text-sm">Terms of Service</Link>
+                <Link href="/privacy" className="text-gray-500 hover:text-teal-600 transition-colors text-sm">Privacy Policy</Link> */}
               </div>
               <div className="flex flex-col gap-4">
                 <span className="text-xs font-bold uppercase tracking-wider text-slate-900">Resources</span>
@@ -80,7 +80,9 @@ const Footer = () => {
         {/* Bottom Part: Copyright & Socials */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-sm text-gray-400">
-            <span>Copyright © 2026 Tigris Smile & ByteWings Technology. All rights reserved.</span>
+            <span>Copyright © 2026 Tigris Smile. All rights reserved. Powered by <a className='font-bold' href="https://bytewings.in/" target="_blank" rel="noopener noreferrer">
+  ByteWings Technology
+</a> </span>
           </div>
 
           {/* Social Icons */}
