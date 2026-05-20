@@ -42,7 +42,7 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || re_68brHhc4_6pZrmRadByxDQ33FNLc8VAUS);
 
 export async function POST(req) {
   try {
