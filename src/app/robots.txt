@@ -1,0 +1,13 @@
+export default function robots() {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: [
+        "/api/",       // Hamare mail API routes ko search engines se chhupane ke liye
+        "/_next/",     // Next.js ke internal build files ko block karne ke liye
+      ],
+    },
+    sitemap: "https://tigrissmile.com.au/sitemap.xml",
+  };
+}
